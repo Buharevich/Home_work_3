@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+void main() {
+	int first, last, sum = 0, count2;
+	cout << "Enter a range of numbers\n";
+	cout << "Enter the first number\n";
+	cin >> first;
+	cout << "Enter the last number\n";
+	cin >> last;
+	count2 = first;
+	while (count2 <= last) {
+		if (count2 % 2 != 0) {
+			sum += count2;
+		}
+		count2++;
+	}
+	cout << "The result is:\n";
+	cout << sum << endl;
+	cout << endl;
+	cout << "If you want to check another task, press 1. If you want to end the program, press 0.\n";
+}
